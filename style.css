@@ -44,6 +44,10 @@ table {
 	border-spacing: 0;
 }
 
+/* FONTS */
+p, h1, h2, label {
+    font-family: 'Roboto';
+}
 /* PAGE CSS */
 
 #signup-section {
@@ -55,23 +59,44 @@ table {
 
 #signup-image {
     background-color: aquamarine;
+    background-image: url(img/rana-sawalha-X7UR0BDz-UY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
 #signup-image > div {
-    background-color: rgba(0, 0, 0, 0.10);
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    top: 50%;
-    width: 100%;
-}
-
-#signup-form-sect {
-    background-color: bisque;
+    background-color: rgba(0, 0, 0, 0.30);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0px;
+    position: absolute;
+    top: 40vh;
+    width: 100%;
+}
+
+#logo-img {
+    height: 80px;
+}
+
+#signup-image > div > h1 {
+    font-size: 55px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* RIGHT SIDE */
+
+#signup-form-sect {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #signup-inner-div {
@@ -79,21 +104,68 @@ table {
     height: auto;
 }
 
+#signup-inner-div > form {
+    
+}
+
 #signup-inner-div > form > section{
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: beige;
+    background-color: white;
+    padding: 20px 50px;
 }
 
 form > section > div {
     display: flex;
     flex-flow: column wrap;
+    padding-bottom: 10px;
 }
 
 form > section > div > input {
-    width: 50%;
+    width: 200px;
 }
 
 #submit-btn-div {
-    justify-content: center;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+#submit-btn-div > button{
+    width: auto;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#submit-btn-div > button:hover {
+    background-color: darkolivegreen;
+}
+
+/* TEXT STYLING */
+
+#signup-inner-div > div {
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+#signup-inner-div > div > p {
+    font-size: 24px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#signup-inner-div > form > section > h1 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    grid-column-start: span 2;
+}
+
+form > section > div > label {
+    font-size: 14px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
 }
