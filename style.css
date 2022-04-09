@@ -94,8 +94,7 @@ p, h1, h2, label {
 #signup-form-sect {
     background-color: #f1f1f1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
 }
 
@@ -104,15 +103,11 @@ p, h1, h2, label {
     height: auto;
 }
 
-#signup-inner-div > form {
-    
-}
-
 #signup-inner-div > form > section{
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: white;
-    padding: 20px 50px;
+    padding: 40px 50px;
 }
 
 form > section > div {
@@ -126,7 +121,7 @@ form > section > div > input {
 }
 
 #submit-btn-div {
-    padding-top: 20px;
+    padding-top: 40px;
     padding-left: 50px;
 }
 
@@ -143,6 +138,11 @@ form > section > div > input {
 
 #submit-btn-div > button:hover {
     background-color: darkolivegreen;
+}
+
+#forgot-pw-div {
+    padding-left: 50px;
+    padding-top: 40px;
 }
 
 /* TEXT STYLING */
@@ -168,4 +168,34 @@ form > section > div > label {
     font-size: 14px;
     padding-bottom: 5px;
     text-transform: uppercase;
+}
+
+#forgot-pw-div > p {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#forgot-pw-div > p > a {
+    color: lightseagreen;
+    
+}
+
+/* FORM INPUT STYLING */
+
+form > section > div > input {
+    border: 1px black solid;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+form > section > div > input:valid {
+    border: 1px solid lightgreen;
+}
+
+form > section > div > input:focus {
+    border: lightblue;
+}
+
+form > section > div > input:invalid {
+    border: 1px solid lightcoral;
 }
